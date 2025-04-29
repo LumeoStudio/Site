@@ -252,6 +252,97 @@ nav ul li .li-special:hover {
     transform: translateX(-100px);
   }
 }
+@media (max-width: 1024px) {
+    /* Верхняя навигация */
+    .navigation {
+      flex-direction: row;
+      height: auto;
+      padding: 10px 20px;
+    }
+  
+    .navigation .conteiner {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .logo {
+      font-size: 18px;
+      height: auto;
+      margin-bottom: 8px;
+    }
+  
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    nav ul li {
+      margin: 4px;
+    }
+  
+    nav ul li a {
+      font-size: 11px;
+      padding: 4px 10px;
+    }
+  
+    /* Инфоблок */
+    .info {
+      height: auto;
+      font-size: 11px;
+      padding: 4px 10px;
+    }
+  
+    .availabiity {
+      font-size: 11px;
+      text-align: center;
+    }
+  
+    /* Картинка в header */
+    .header-image {
+      height: auto;
+      margin-top: 120px;
+      align-items: center;
+    }
+  
+    .header-image img {
+      height: 250px;
+      width: 100%;
+      border-radius: 0;
+      object-fit: cover;
+    }
+  
+    /* Нижняя навигация */
+    .navigation-bottom {
+      height: auto;
+      padding: 8px 10px;
+    }
+  
+    .navigation-bottom p {
+      font-size: 12px;
+      height: auto;
+      text-align: center;
+      animation: none; /* отключить анимацию на телефонах */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    nav ul li a {
+      font-size: 10px;
+      padding: 4px 8px;
+    }
+  
+    .logo {
+      font-size: 16px;
+    }
+  
+    .navigation-bottom p {
+      font-size: 11px;
+    }
+  }
+  
 
 /*Header*/
 .header {
@@ -353,6 +444,7 @@ nav ul li .li-special:hover {
     opacity: 1;
   }
 }
+
 .header-exemples {
   display: flex;
   justify-content: space-between;
@@ -433,8 +525,8 @@ nav ul li .li-special:hover {
   width: 14px;
 }
 .header-action-button-R-image img {
-  height: 30px;
-}
+    height: 30px;
+  }
 .header-action-button-L:hover img {
   animation: headerarrowbellow 1s ease-in-out infinite alternate;
 }
@@ -469,6 +561,10 @@ nav ul li .li-special:hover {
       font-size: 48px;
       text-align: left;
     }
+    .header-title-image {
+
+        display: none;
+      }
   
     .header-basic,
     .header-subtitle {
@@ -502,7 +598,7 @@ nav ul li .li-special:hover {
   
   }
   
-   @media (max-width: 600px) {
+  @media (max-width: 600px) {
     .header {
       padding: 40px 16px;
     }
@@ -517,6 +613,9 @@ nav ul li .li-special:hover {
     .header-subtitle {
       font-size: 20px;
       text-align: left;
+    }
+    .header-title-image{
+        
     }
   
     .header-subtitle {
@@ -548,8 +647,14 @@ nav ul li .li-special:hover {
 
       .header-action-button-R-text {
         margin: 0px 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+      
       }
   }
+  
 /*14 22 35 56*/
 
 .screen {
