@@ -353,7 +353,6 @@ nav ul li .li-special:hover {
     opacity: 1;
   }
 }
-
 .header-exemples {
   display: flex;
   justify-content: space-between;
@@ -420,6 +419,16 @@ nav ul li .li-special:hover {
   align-items: center;
   justify-content: center;
 }
+.header-action-button-R-image {
+    background-color: var(--basic-color-white);
+    width: 0px;
+    height: 30px;
+    border-radius: 100px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 .header-action-button-L-image img {
   width: 14px;
 }
@@ -441,7 +450,89 @@ nav ul li .li-special:hover {
 }
 .header-action-button-R-text {
   margin: 0px 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
 }
+/*14 22 35 56*/
+@media (max-width: 1024px) {
+    .header {
+      padding: 60px 20px;
+    }
+  
+    .header-title {
+      font-size: 48px;
+      text-align: left;
+    }
+  
+    .header-basic,
+    .header-subtitle {
+      font-size: 24px;
+      text-align: left;
+    }
+   /* .header-action {
+        display: flex;
+        flex-direction: row;
+        margin: 46px 0px;
+        margin-bottom: 80px;
+      }*/
+    .header-action  {
+        align-items: start;
+        width: 100%;
+    } 
+ /*   .header-action {
+      flex-direction: column;
+      align-items: center;
+      margin: 40px 0;
+    }*/
+  
+    .header-action a {
+        padding: 6px 6px;
+    }
+  
+    /*.header-action-button-L-text,
+    .header-action-button-R-text {
+      margin: 0;
+    }*/
+  
+  }
+  
+  @media (max-width: 600px) {
+    .header {
+      padding: 40px 16px;
+    }
+  
+    .header-title {
+      font-size: 36px;
+      line-height: 1.2;
+      text-align: left;
+    }
+  
+    .header-basic,
+    .header-subtitle {
+      font-size: 20px;
+      text-align: left;
+    }
+  
+    .header-subtitle {
+      margin-top: 30px;
+    }
+  
+    .header-action {
+      margin: 30px 0 60px;
+    }
+  
+    .header-title-image {
+      width: 80px;
+      height: 45px;
+    }
+  
+    .header-exemple:first-child {
+      font-size: 36px;
+    }
+  }
 /*14 22 35 56*/
 
 .screen {
