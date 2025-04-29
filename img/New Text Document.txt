@@ -1,0 +1,61 @@
+
+    <section class="reviews-widget" id="reviews">
+      <div class="conteiner flex-column">
+    
+        <div class="reviews-title title">
+          Hear From Our Clients
+        </div>
+    
+        <div class="reviews-slider">
+    
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="imgc"></div>
+              <div class="review-info">
+                <h4 class="review-name">John D.</h4>
+                <p class="review-role">CEO, Local Retail Brand</p>
+              </div>
+            </div>
+            <p class="review-text">"The animated ad helped us present our offer more clearly. It matched our brand and worked well across social platforms."</p>
+          </div>
+    
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="imgc"></div>
+              <div class="review-info">
+                <h4 class="review-name">Nova Studio</h4>
+                <p class="review-role">Marketing Team</p>
+              </div>
+            </div>
+            <p class="review-text">"Professional visuals and smooth communication throughout. The final result aligned well with our brand voice and visuals."</p>
+          </div>
+    
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="imgc"></div>
+              <div class="review-info">
+                <h4 class="review-name">Michael L.</h4>
+                <p class="review-role">Tech Startup</p>
+              </div>
+            </div>
+            <p class="review-text">"Simple process, and the formats made it easy to reuse the ad across platforms. The animations were clean and effective."</p>
+          </div>
+    
+          <!-- Review 4 -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="imgc"></div>
+              <div class="review-info">
+                <h4 class="review-name">Mero Design</h4>
+                <p class="review-role">Creative Department</p>
+              </div>
+            </div>
+            <p class="review-text">"The video quality was solid, and we appreciated the attention to brand consistency. Add-ons like image editing added extra value."</p>
+          </div>
+    
+        </div>
+      </div>
+    </section>
