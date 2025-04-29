@@ -432,6 +432,9 @@ nav ul li .li-special:hover {
 .header-action-button-L-image img {
   width: 14px;
 }
+.header-action-button-R-image img {
+  height: 30px;
+}
 .header-action-button-L:hover img {
   animation: headerarrowbellow 1s ease-in-out infinite alternate;
 }
