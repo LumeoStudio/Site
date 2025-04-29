@@ -900,22 +900,126 @@ nav ul li .li-special:hover {
   font-size: 12px;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .price-grid {
-    flex-direction: column;
-  }
+/* ======== Price Widget Responsive Only ======== */
 
-  .price-options-grid {
-    grid-template-columns: 1fr 1fr;
+@media (max-width: 1024px) {
+    .price-grid {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+  
+    .price-main-card {
+      width: 50%;
+    }
+  
+    .price-options-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      width: 100%;
+    }
+  
+    .price-option {
+      width: 50%;
+    }
   }
-}
-
-@media (max-width: 600px) {
-  .price-options-grid {
-    grid-template-columns: 1fr;
+  @media (max-width: 768px) {
+    .price-main-card {
+      width: 100%;
+      padding: 20px;
+    }
+    .price-option {
+        width: 100%;
+      }
+  
+    .price-title {
+      font-size: 24px;
+    }
+  
+    .price-subtitle {
+      font-size: 14px;
+    }
+  
+    .price-features li {
+      font-size: 14px;
+    }
+  
+    .price-features li span {
+      font-size: 11px;
+    }
+  
+    .price-amount {
+      font-size: 24px;
+    }
+  
+    .price-amount span {
+      font-size: 14px;
+    }
+  
+    .price-button {
+      height: 42px;
+      font-size: 13px;
+    }
+  
+    .price-options-grid {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+  
+    .price-option {
+      padding: 18px;
+    }
+  
+    .price-option h4:first-child {
+      font-size: 14px;
+    }
+  
+    .price-option h4:nth-child(2),
+    .price-option p span {
+      font-size: 11px;
+    }
+  
+    .price-option p {
+      font-size: 14px;
+    }
   }
-}
+  
+  @media (max-width: 480px) {
+    .price-widget {
+      padding: 40px 12px;
+    }
+  
+    .price-main-card {
+      padding: 16px;
+    }
+  
+    .price-title {
+      font-size: 20px;
+    }
+  
+    .price-subtitle {
+      font-size: 13px;
+    }
+  
+    .price-features li {
+      font-size: 13px;
+    }
+  
+    .price-amount {
+      font-size: 20px;
+    }
+  
+    .price-button {
+      height: 40px;
+      font-size: 12px;
+    }
+  
+    .price-options-grid {
+      gap: 10px;
+    }
+  }
 
 /* Reviews Widget */
 .flex-column {
