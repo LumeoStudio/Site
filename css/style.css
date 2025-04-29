@@ -499,7 +499,7 @@ nav ul li .li-special:hover {
   
   }
   
-  @media (max-width: 600px) {
+   @media (max-width: 600px) {
     .header {
       padding: 40px 16px;
     }
@@ -532,6 +532,20 @@ nav ul li .li-special:hover {
     .header-exemple:first-child {
       font-size: 36px;
     }
+    .header-action-button-L-image {
+
+        margin-right: 20px;
+
+      }
+      .header-action-button-L-text {
+        margin-right: 20px;
+        text-align: left;
+
+      }
+
+      .header-action-button-R-text {
+        margin: 0px 25px;
+      }
   }
 /*14 22 35 56*/
 
