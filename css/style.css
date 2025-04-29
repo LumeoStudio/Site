@@ -569,6 +569,58 @@ nav ul li .li-special:hover {
   opacity: 0.5;
 }
 
+/* Tablet (до 1024px) */
+@media (max-width: 1024px) {
+  .widget-offer_cantent {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .widget-offer_cantent-card {
+    width: 45%;
+    height: auto;
+    padding: 20px;
+  }
+}
+
+/* Mobile (до 768px) */
+@media (max-width: 768px) {
+  .widget-offer {
+    padding: 30px 16px;
+  }
+
+  .widget-offer_cantent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .widget-offer_cantent-card {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .widget-offer_cantent-card p:first-child {
+    font-size: 24px;
+  }
+
+  .widget-offer_cantent-card p:nth-child(2),
+  .widget-offer_cantent-card p:nth-child(3) {
+    font-size: 14px;
+  }
+
+  .widget-offer_cantent-card p:nth-child(3) span {
+    font-size: 11px;
+  }
+
+  .widget-offer_cantent-card-acc a {
+    font-size: 13px;
+  }
+}
+
+
 /*FAQ*/
 
 .faq-section {
