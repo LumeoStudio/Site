@@ -11,7 +11,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
 body {
   background-color: var(--basic-color-white);
   margin-top: 50px;
