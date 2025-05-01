@@ -11,8 +11,7 @@
 html {
   scroll-behavior: smooth;
 }
-button,
-a {
+div,button,a {
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -1601,7 +1600,7 @@ opacity: 0.97;
   }
 
   .title-inf::after {
-    width: 60px; /* короче линия на маленьких экранах */
+   
   }
 }
 
