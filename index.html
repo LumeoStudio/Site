@@ -90,7 +90,43 @@
         </div>
         <div class="screen-cont">
           <div class="screen" id="examples">
-            <img src="img/Exemple.jpg" alt="" />
+            <!--<img src="img/Exemple.jpg" alt="" />-->
+            <!--<iframe
+              width="640"
+              height="360"
+              src="https://player.vimeo.com/video/1078018477?h=ebe021e114&amp;badge=0&amp;autopause=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;player_id=0&amp;app_id=58479&amp;background=1&amp;transparent=1"
+              frameborder="0"
+              allow="autoplay"
+              sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox"
+            ></iframe>-->
+            <iframe
+              id="vimeoPlayer"
+              src="https://player.vimeo.com/video/1080826296?h=443c957023&amp;badge=0&amp;autopause=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;player_id=0&amp;app_id=58479&amp;background=1&amp;transparent=1"
+              frameborder="0"
+              allow="autoplay"
+              sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox"
+            ></iframe>
+            <button id="toggleSound">🔈 Unmute</button>
+
+            <script src="https://player.vimeo.com/api/player.js"></script>
+            <script>
+              const iframe = document.getElementById("vimeoPlayer");
+              const player = new Vimeo.Player(iframe);
+              const button = document.getElementById("toggleSound");
+
+              let isMuted = true;
+
+              button.addEventListener("click", () => {
+                if (isMuted) {
+                  player.setVolume(1);
+                  button.textContent = "🔇 Mute";
+                } else {
+                  player.setVolume(0);
+                  button.textContent = "🔈 Unmute";
+                }
+                isMuted = !isMuted;
+              });
+            </script>
           </div>
         </div>
       </div>
